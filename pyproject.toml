@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regret9sup-moearch_jd311"
+version = "0.1.0"
+description = "为每一项打分并与阈值比较，明确标出通过、边界与不通过三档"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "regret9sup" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://regret9sup.github.io"
+Repository = "https://github.com/regret9sup/moearch_jd311"
+Issues = "https://github.com/regret9sup/moearch_jd311/issues"
+
+[project.scripts]
+moearch_jd311 = "moearch_jd311:main"
+
+[tool.setuptools]
+py-modules = ["moearch_jd311"]
